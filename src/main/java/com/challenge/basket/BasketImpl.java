@@ -90,15 +90,11 @@ public class BasketImpl implements IBasket {
 			cost = calculateTotalCost(basket.values());
 			
 			Double newCost = cost+ singleItem.getPrice() + singleItem.getShippingPrice();
-			//System.out.println(cost + " " + Math.round(newCost) );
+			
 			if(Math.round(newCost) > budget) {
 				return;
 			}
-//			
-//			if (cost >= (budget - singleItem.getPrice() - singleItem.getShippingPrice())) {
-//				//cost +=  singleItem.getPrice() + singleItem.getShippingPrice();
-//				return;
-//			}
+
 		}
 		basket.put(singleRandomCategory.getName(), singleItem);
 		
