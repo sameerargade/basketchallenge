@@ -27,8 +27,8 @@ class ItemHelperTest {
 		helper = new ItemHelper();
 		maxPrice = 20.0;
 		minPrice = 1.0;
-		maxShippingPrice = 2.0;
-		minShippingPrice = 5.0;
+		maxShippingPrice = 5.0;
+		minShippingPrice = 2.0;
 		minRating = 1;
 		maxRating = 5;
 		size = 10;
